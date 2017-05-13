@@ -1,0 +1,1 @@
+cmd_/home/mannu/code/littlePenguine/task1/hello.ko := ld -r -m elf_x86_64 -T ./scripts/module-common.lds --build-id  -o /home/mannu/code/littlePenguine/task1/hello.ko /home/mannu/code/littlePenguine/task1/hello.o /home/mannu/code/littlePenguine/task1/hello.mod.o

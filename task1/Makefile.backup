@@ -1,0 +1,13 @@
+SHELL := /bin/bash
+
+getDir:
+	echo $(dir)
+	if [ -z $(dir) ]
+	then
+		dir="/lib/modules/$(shell uname -r)/build"
+	fi
+
+obj-m := hello.o
+
+all:
+	make -C $(dir) M=`pwd`
