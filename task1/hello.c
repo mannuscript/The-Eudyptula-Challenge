@@ -11,7 +11,7 @@ int hello_init(void)
 
 void hello_exit(void)
 {
-	printk(KERN_DEBUG "Goodbye world");	
+	printk(KERN_DEBUG "Goodbye world");
 }
 
 module_init(hello_init);
