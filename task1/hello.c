@@ -5,13 +5,14 @@ MODULE_LICENSE("GPL");
 
 int hello_init(void)
 {
-	printk(KERN_DEBUG "Hello World!");
+	pr_debug("Hello World!");
 	return 0;
 }
 
 void hello_exit(void)
 {
-	printk(KERN_DEBUG "Goodbye world");
+	pr_debug("Goodbye world");
+	return;
 }
 
 module_init(hello_init);
